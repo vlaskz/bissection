@@ -1,6 +1,6 @@
 #include <math.h>
 #include <stdio.h>
-#define ARRAY_SIZE(arr)     (sizeof(arr) / sizeof((arr)[0]))
+#define LENGTH 6
 
 
 float function(float);
@@ -13,7 +13,7 @@ void getData();
 
 void iterate();
 
-float a = 0, b = 0, x = 0, fa = 0, fb = 0, fx = 0, tol = 0;
+float a = 0, b = 0, x = 0, fa = 0, fb = 0, fx = 0, tol=0;
 
 float n_iter = 0;
 void printMatrix(float[]);
@@ -21,7 +21,7 @@ void printMatrix(float[]);
 int main() {
     getData();
     float matrix[(int)n_iter][7];
-    for (int i = 0; i < n_iter; i++) {
+    for (int i = 0; i < (int)n_iter; i++) {
         iterate();
         matrix[i][0] = a;
         matrix[i][1] = b;
@@ -29,7 +29,7 @@ int main() {
         matrix[i][3] = fa;
         matrix[i][4] = fb;
         matrix[i][5] = fx;
-        matrix[i][6] = tol;
+
 
         printMatrix(matrix[i]);
         printf("\n");
@@ -39,7 +39,7 @@ int main() {
 }
 
 void printMatrix(float arr[]) {
-    for(int i=0;i<6;i++){
+    for(int i=0;i<LENGTH;i++){
         printf("\t %f",arr[i]);
     }
 }
@@ -50,7 +50,7 @@ void iterate() {
     fb = function(b);
     fx = function(x);
     if(signal(fa)==signal(fx)){
-        a = x;
+        a=x;
     }else{
         b=x;
     }
