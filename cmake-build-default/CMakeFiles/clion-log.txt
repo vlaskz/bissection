@@ -1,0 +1,4 @@
+/root/Downloads/clion-2019.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE= -lm -G "CodeBlocks - Unix Makefiles" "/root/Área de trabalho/codes/bissection"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/Área de trabalho/codes/bissection/cmake-build-default

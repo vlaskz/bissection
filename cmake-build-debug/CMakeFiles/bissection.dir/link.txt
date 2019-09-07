@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/bissection.dir/main.c.o  -o bissection 

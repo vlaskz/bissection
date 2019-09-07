@@ -1,0 +1,3 @@
+/root/Área de trabalho/codes/bissection/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/root/Área de trabalho/codes/bissection/cmake-build-debug/CMakeFiles/bissection.dir
+/root/Área de trabalho/codes/bissection/cmake-build-debug/CMakeFiles/edit_cache.dir
